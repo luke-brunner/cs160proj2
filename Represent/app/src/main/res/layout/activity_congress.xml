@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".congress">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/myCardView1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="8dp"
+        android:onClick="onTap1"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/candidate1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <ImageView
+            android:id="@+id/roundedimage1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="onTap1"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/picture_error" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/candidate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/expletus_sans"
+        android:onClick="onTap1"
+        android:text="Candidate1"
+        android:textSize="30sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/myCardView2"
+        app:layout_constraintEnd_toStartOf="@+id/party1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myCardView1" />
+
+    <TextView
+        android:id="@+id/party1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/expletus_sans"
+        android:onClick="onTap1"
+        android:text="P"
+        android:textSize="30sp"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/candidate1"
+        app:layout_constraintTop_toTopOf="@+id/candidate1" />
+
+    <TextView
+        android:id="@+id/party2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/expletus_sans"
+        android:onClick="onTap2"
+        android:text="P"
+        android:textSize="30sp"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/candidate2"
+        app:layout_constraintTop_toTopOf="@+id/candidate2" />
+
+    <TextView
+        android:id="@+id/party3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/expletus_sans"
+        android:onClick="onTap3"
+        android:text="P"
+        android:textSize="30sp"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/candidate3"
+        app:layout_constraintTop_toTopOf="@+id/candidate3" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/myCardView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="8dp"
+        android:onClick="onTap2"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/candidate2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/candidate1"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <ImageView
+            android:id="@+id/roundedimage2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="onTap2"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/picture_error" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/candidate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/expletus_sans"
+        android:onClick="onTap2"
+        android:text="Candidate2"
+        android:textSize="30sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/myCardView3"
+        app:layout_constraintEnd_toStartOf="@+id/party2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myCardView2" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/myCardView3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="8dp"
+        android:onClick="onTap3"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/candidate3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/candidate2">
+
+        <ImageView
+            android:id="@+id/roundedimage3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="onTap3"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/picture_error" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/candidate3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/expletus_sans"
+        android:onClick="onTap3"
+        android:text="Candidate3"
+        android:textSize="30sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/party3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myCardView3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
